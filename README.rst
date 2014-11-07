@@ -129,7 +129,9 @@ Configuring and running your Anki Server
 
    a. If you installed from source, it'll be at the top-level.
 
-   b. If you installed via 'easy_install' or 'pip', you'll find all
+   b. If you installed from ``pip``, it's in the ``examples`` subdirectory.
+
+   c. If you installed via 'easy_install', you'll find all
       the example configuration at
       ``python_prefix/lib/python2.X/site-packages/AnkiServer-2.X.X-py2.X.egg/examples``
       (replacing ``python_prefix`` with the root of your Python and
