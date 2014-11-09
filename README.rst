@@ -99,23 +99,22 @@ Installing your Anki Server from source
 
      $ pip install webob PasteDeploy PasteScript sqlalchemy simplejson
 
-   Or you can use your the package manager provided by your OS.
+   Or you can use your the package manager provided by your OS.  For example, using Debian::
+   
+     # apt-get install python-webob python-pastedeploy python-pastescript python-sqlalchemy python-simplejson
 
 2. Download and install libanki. You can find the latest release of
    Anki here:
 
-   http://code.google.com/p/anki/downloads/list
+   https://github.com/dae/anki
+   
+   Clone the repository.
+   
+     $ git clone https://github.com/dae/anki.git
 
-   Look for a \*.tgz file with a Summary of "Anki Source". At the time
-   of this writing that is anki-2.0.11.tgz.
+   Then rename the directory:
 
-   Download this file and extract.
-
-   Then either:
-
-   a. Run the 'make install', or
-
-   b. Copy the entire directory to /usr/share/anki
+     $ mv anki anki-bundled
 
 3. Make the egg info files (so paster can see our app)::
 
